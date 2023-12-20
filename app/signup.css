@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+
+    background-image: url(yashh.jpg);
+    width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .txt_field {
+    position: relative;
+    margin: 30px 0;
+  }
+
+
+  .txt_field input {
+    border: none;
+    border-bottom: 2px solid #adadad;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    color: #333;
+    background: none;
+    outline: none;
+  }
+  
+  .txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: 0.5s;
+  }
+  
+  .txt_field input:focus + span::before {
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .login_link {
+    margin-top: 20px;
+  }
+  
+  .login_link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login_link a:hover {
+    text-decoration: underline;
+  }
+  
